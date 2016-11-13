@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item - CRUD</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/model.js"></script>
+    <script src="../js/controller.js"></script>
+</head>
+<body>
+   <h2>Item Details</h2>
+    <table>
+        <tr>
+            <td><label for="">ItemNo</label></td>
+            <td><label id="itemno"></label></td>
+        </tr>
+        <tr>
+            <td><label for="">Name</label></td>
+            <td><input class="clear" type="text" placeholder="Type Name Here" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="">Desc</label></td>
+            <td><textarea id="desc" class="clear" cols="20" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="">Price</label></td>
+            <td><input type="text" class="clear" placeholder="Type Price Here" id="price"></td>
+        </tr>
+        <tr>
+            <td><label for="">URL</label></td>
+            <td><input class="clear" type="url" value="http://c2c.sulekhalive.com/lcproducts/mobiles/images/samsung/album/thumb/samsung-galaxy-j5(16).jpg" placeholder="Type URL Here" id="url"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td><button id="add">Add</button></td>
+                        <td><button id="delete">Delete</button></td>
+                        <td><button id="search"> Search</button></td>
+                        <td><button>Edit</button></td>
+                        <td><button id="sort">Sort</button></td>
+                        <td><button id="save">Save</button></td>
+                        <td><button
+                         id="load">Load</button></td>
+                         <td><button
+                         id="clear">Clear Local Storage</button></td>
+                         <td><button
+                         id="getdata">Get ServerData </button></td>
+                         
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>Items</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>Price</th>
+                    <th>URL</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+</html>
