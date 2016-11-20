@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Calc</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/custom/app.js"></script>
+    <script src="js/custom/model.js"></script>
+    <script src="js/custom/controller.js"></script>
+</head>
+<body ng-app="salaryapp" ng-controller="salaryctrl">
+    <input type="text" ng-model="salary" placeholder="Type Salary Here" >
+    <button ng-click="calculateSalary()">Calculate</button>
+    <fieldset ng-show="showit">
+        <legend>Salary Details</legend>
+        <table>
+            <tr>
+                <td><label for="">HRA</label></td>
+                <td>{{hra}}</td>
+            </tr>
+            <tr>
+                <td><label for="">DA</label></td>
+                <td>{{da}}</td>
+            </tr>
+            <tr>
+                <td><label for="">TA</label></td>
+                <td>{{ta}}</td>
+            </tr>
+            <tr>
+                <td><label for="">PF</label></td>
+                <td>{{pf}}</td>
+            </tr>
+            <tr>
+                <td><label for="">NS</label></td>
+                <td>{{ns}}</td>
+            </tr>
+            
+        </table>
+    </fieldset>
+</body>
+</html>

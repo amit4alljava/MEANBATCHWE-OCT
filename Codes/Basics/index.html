@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/angular.min.js"></script>
+    <style>
+        .red{
+        color:red;
+        }
+        .green{
+            color:green;
+        }
+    </style>
+</head>
+<body ng-app>
+   <input type="text" ng-model="mystyle" placeholder="Enter the Style"> {{mystyle}}
+    <input ng-model="name" type="text" placeholder="Type Your Name">
+    <h1>Welcome {{name}}</h1>
+    <input type="text" ng-init="amount=0" ng-model="amount" placeholder="Type Amount"><input ng-model="qu" ng-init="qu=0" type="text" placeholder="Type Quantity">
+    
+    <h1 ng-class="{red:amount>1000,green:amount<1000}"> Rate is {{amount * qu}} </h1>
+</body>
+</html>
