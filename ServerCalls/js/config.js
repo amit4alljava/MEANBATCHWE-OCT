@@ -1,0 +1,1 @@
+app.constant("url","http://127.0.0.1:61961/ServerCalls/server/server.json");
