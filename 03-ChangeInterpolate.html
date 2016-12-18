@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Using Expression</title>
+    
+    <script src="js/angular.min.js"></script>
+    <script>
+    var myApp = angular.module('myApp', [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
+});
+    </script>
+</head>
+<body ng-app="myApp">
+       
+    <input type="text" ng-model="name" placeholder="Type Name Here">
+    Welcome [[name]]
+</body>
+</html>
